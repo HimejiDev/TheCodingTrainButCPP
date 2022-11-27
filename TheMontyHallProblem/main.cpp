@@ -1,11 +1,10 @@
 #include "iostream"
 #include "random"
-#include "string"
 
 class door
 {
 public:
-    std::string prize = "💩";
+    const char* prize = "💩";
 };
 
 int rand_int(int min, int max)
@@ -52,19 +51,19 @@ int main()
         int reveal = revealDoor(doorPicked, winnerDoor);
 
         // win or lose
-        std::string stay;
-        std::string _switch;
+        char stay;
+        char _switch;
 
         if (doorPicked == winnerDoor)
         {
-            stay = "W";
+            stay = 'W';
             stayWins += 1;
-            _switch = "L";
+            _switch = 'L';
         }
         else
         {
-            stay = "L";
-            _switch = "W";
+            stay = 'L';
+            _switch = 'W';
             switchWins += 1;
         }
 
