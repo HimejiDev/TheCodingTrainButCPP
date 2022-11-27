@@ -4,7 +4,7 @@
 class door
 {
 public:
-    const char* prize = "💩";
+    const char *prize = "💩";
 };
 
 int rand_int(int min, int max)
@@ -76,5 +76,5 @@ int main()
     std::cout << "stay winrate: " << stayWinRate << std::endl;
     std::cout << "switch winrate: " << switchWinRate << std::endl;
 
-        return 0;
+    return 0;
 }
